@@ -1,0 +1,204 @@
+.bg {
+background: #070729;
+background: linear-gradient(128deg, rgba(7, 7, 41, 1) 0%, rgba(47, 23, 135, 1) 42%, rgba(13, 82, 42, 1) 100%);
+height: 100%;
+background-attachment: fixed;
+}
+/* background: #b7edb7;
+background: linear-gradient(308deg, rgba(183, 237, 183, 1) 25%, rgba(252, 252, 225, 1) 65%); ----- Para el fondo claro*/
+
+.cuadroTitulo{
+    background: #654ea3;  
+background: -webkit-linear-gradient(to right, #eaafc81a, #654ea32c);  
+background: linear-gradient(to right, #5a454e11, #654ea32d); 
+ padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 2% 28%;
+border: solid 2px #c7b0eebf;
+}
+.tituloPrincipal{
+    font-size: 6em;
+   margin: 10px;
+   color: #aa7ff3;
+}
+.h2index{
+font-size: 3em;
+font-weight: bolder;
+margin: 5px;
+  color: #c0a9e9;
+}
+
+
+.cardindex {
+  height: 23rem;
+  width: 20rem;
+  background-color: rgba(117, 93, 204, 0.103);
+  margin-top: 5%;
+text-align: center;
+border-radius: 10px;
+border: solid 2px #c7b0ee2e;
+}
+
+.cardsindex {
+  display: flex;
+  justify-content: space-around
+
+}
+
+.cardtitulo{
+    font-size: 40px;
+    margin: 8% 0;
+    color: #c7b0ee;
+    font-weight: bolder;
+}
+
+.pCard2{
+    font-size: 20px;
+    margin: 5%;
+    color: #ccb5f5;
+}
+.mapa{
+  max-width: 90%;
+  height: 64%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+}
+
+.calle{
+   color: #ccb5f5;
+     font-size: 25px;
+     margin: 0;
+     font-weight: bolder;
+}
+
+.cardcatalogosPadre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cardcatalogosPadre p{
+     color: #ccb5f5;
+     font-size: 30px;
+     margin: 0;
+}
+.cardcatalogos{
+     height: 8rem;
+  width: 15rem;
+  background-color: rgba(117, 93, 204, 0.103);
+  margin: 4%;
+text-align: center;
+border-radius: 10px;
+border: solid 2px #c7b0ee99;
+
+}
+
+.cardcatalogos p{
+    font-size: 2em;
+    color: #ccb5f5;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+
+
+/* página dietética */
+
+.h2produ{
+     color: #aa7ff3;
+     font-size: 3rem;
+     margin: 0;
+     font-weight: bolder;
+     text-align: center;
+     margin-top: 4%;
+}
+
+.carddietetica {
+     background: #654ea3;  
+  border-radius: 12px;
+  text-align: center;
+border: solid 2px #c7b0eebf;
+height: 25vh;
+width: 10vw;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+    cursor:pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.carddietetica:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+
+.cardsdietetica{
+display: flex;
+justify-content: space-around;
+margin-top: 3%;
+}
+
+
+.dieteticaimgcard{
+  height: 70%;
+  width: 100%;
+  border-radius: 8%;
+}
+
+.carddietetica p {
+font-size: 1.5rem;
+font-weight: bolder;
+color: #bbf694;
+margin: 0;
+}
+
+
+
+
+
+
+.productos-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 6rem;
+}
+
+.producto-card {
+     background: #654ea3;  
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    border: solid 2px #c7b0eebf;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.producto-card h3{
+  font-size: 1.3rem;
+font-weight: bolder;
+color: #bbf694;
+margin: 0;
+}
+.producto-card p{
+  font-size: 1rem;
+font-weight: bolder;
+color: #bbf694;
+margin: 0;
+}
+
+
