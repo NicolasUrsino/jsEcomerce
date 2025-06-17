@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const botones = document.querySelectorAll(".carddietetica");
-    let categoriaVisible = null; // Para saber qué grupo está visible
+    let categoriaVisible = null; 
 
     botones.forEach(boton => {
         boton.addEventListener("click", () => {
@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
             else if (categoria.includes("legumbres")) clave = "legumbres";
 
             if (categoriaVisible === clave) {
-                // Si se vuelve a apretar el mismo botón: ocultar productos
+            
                 productosContainer.innerHTML = "";
                 categoriaVisible = null;
             } else {
-                // Mostrar nuevos productos
+               
                 mostrarProductos(clave);
                 categoriaVisible = clave;
             }
