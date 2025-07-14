@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dietética</title>
+  <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body class="bg">
+
+  <header>
+    <a class="pCard2" href="../index.html">Volver</a>
+    <div class="cuadroTitulo">
+      <h1 class="tituloPrincipal">Dietética</h1>
+    </div>
     
-<header>
+  </header>
 
- <div class="cuadroTitulo">
-    <h1 class="tituloPrincipal">Dietética</h1>
-        </div>
-</header>
+  <main>
+    <h2 class="h2produ">¿Qué productos te interesan?:</h2>
 
-<main>
-<h2 class="h2produ">¿Qué productos te interesan?:</h2>
-<section class="cardsdietetica">
+    <section class="cardsdietetica">
+      <button class="carddietetica">
+        <img class="dieteticaimgcard" src="../img/harinas.webp" alt="harinas" />
+        <p>Harinas</p>
+      </button>
+      <button class="carddietetica">
+        <img class="dieteticaimgcard" src="../img/frutos-secos.jpg" alt="frutos secos" />
+        <p>Frutos Secos</p>
+      </button>
+      <button class="carddietetica">
+        <img class="dieteticaimgcard" src="../img/almohaditas-de-frutilla.jpg" alt="almohaditas rellenas" />
+        <p>Almohaditas Rellenas</p>
+      </button>
+      <button class="carddietetica">
+        <img class="dieteticaimgcard" src="../img/varias-legumbres.webp" alt="legumbres" />
+        <p>Legumbres</p>
+      </button>
+    </section>
 
-<button class="carddietetica">
-<img class="dieteticaimgcard" src="../img/harinas.webp" alt="harinas">
-<p>Harinas</p>
+    <section id="productos" class="productos-container"></section>
 
+    <!-- Botón flotante -->
+    <button id="toggleCarrito" aria-label="Ver carrito">
+  🛒 <span id="contadorCarrito">0</span>
 </button>
-<button class="carddietetica">
-<img class="dieteticaimgcard" src="../img/frutos-secos.jpg" alt="frutos secos">
-<p>Frutos Secos</p>
-
-</button>
-<button class="carddietetica">
-<img class="dieteticaimgcard" src="../img/almohaditas-de-frutilla.jpg" alt="almohaditas rellenas">
-<p>Almohaditas Rellenas</p>
-
-</button>
-<button class="carddietetica">
-<img class="dieteticaimgcard" src="../img/varias-legumbres.webp" alt="legumbres">
-<p>legumbres</p>
-
-</button>
-
-</section> 
 
 
-<section id="productos" class="productos-container">
-    <!-- Aquí se mostrarán las cards de productos -->
-</section>
+    <!-- Contenedor carrito lateral -->
+    <div id="carritoLateral">
+      <span id="cerrarCarrito">&times;</span>
 
+      <h2>Carrito</h2>
+      <div id="carritoContainer"></div>
+    </div>
+  </main>
 
-</main>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../main.js"></script>
 </body>
 </html>

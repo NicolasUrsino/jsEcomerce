@@ -79,7 +79,7 @@ border: solid 2px #c7b0ee2e;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .cardcatalogosPadre p{
      color: #ccb5f5;
@@ -125,15 +125,15 @@ border: solid 2px #c7b0ee99;
   border-radius: 12px;
   text-align: center;
 border: solid 2px #c7b0eebf;
-height: 25vh;
-width: 10vw;
+ width: 180px;
+  min-height: 150px;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
     cursor:pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
+} 
 
 .carddietetica:hover {
     transform: scale(1.03);
@@ -158,7 +158,7 @@ margin-top: 3%;
 .carddietetica p {
 font-size: 1.5rem;
 font-weight: bolder;
-color: #bbf694;
+color: #e4ccff;
 margin: 0;
 }
 
@@ -168,19 +168,23 @@ margin: 0;
 
 
 .productos-container {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-    margin-top: 6rem;
+  
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 6rem;
+  flex-wrap: wrap;
 }
+
+
 
 .producto-card {
      background: #654ea3;  
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 10%;
-    height: 10%;
+    width: 150px;
+  min-height: 150px;
     text-align: center;
     border: solid 2px #c7b0eebf;
     display: flex;
@@ -191,14 +195,195 @@ margin: 0;
 .producto-card h3{
   font-size: 1.3rem;
 font-weight: bolder;
-color: #bbf694;
+color: #e4ccff;
 margin: 0;
+
 }
 .producto-card p{
   font-size: 1rem;
 font-weight: bolder;
-color: #bbf694;
+color: #e4ccff;
 margin: 0;
 }
+.producto-card img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
 
+
+
+
+
+
+
+.input-cantidad {
+  width: 60px;
+  margin: 8px auto;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  border: solid 2px #e7e0f5bf;
+  border-radius: 6px;
+  
+  color: #3e2484;  
+}
+
+.agregar-carrito {
+  background-color: #c095f1;
+   border: solid 2px #e7e0f5bf;
+   color: #3e2484;  
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.agregar-carrito:hover {
+  background-color: #3e2484;
+  color: #e7e0f5bf;
+} 
+
+
+
+
+#carritoLateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(160deg, #c07fe9, #e0e0e0);
+  border-left: 2px solid #ccc;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+#carritoLateral h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #472681;
+  font-size: 50px;
+}
+
+#carritoContainer div {
+  background: rgba(255, 255, 255, 0.711);
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+#carritoContainer p {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#carritoContainer button {
+  background-color: #e53835cd;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 5px;
+  display: block;
+  margin: 25px auto;
+}
+
+
+#carritoContainer button:hover {
+  background-color: #c62828;
+}
+
+#carritoContainer strong {
+  display: block;
+  margin: 40px;
+  font-size: 25px;
+text-align: center;
+} 
+
+
+#toggleCarrito {
+  position: fixed;
+  right: 345px;
+  top: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  font-size: 22px;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: fixed;
+  animation: parpadeo 1s infinite;
+}
+
+#toggleCarrito span#contadorCarrito {
+  background-color: #f44336;
+  color: white;
+  font-size: 14px;
+  border-radius: 50%;
+  padding: 3px 7px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-weight: bold;
+}
+
+.destacar {
+  animation: parpadeo 0.8s ease;
+}
+
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6;}
+}
+
+img.fly {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#cerrarCarrito{
+  cursor: pointer;
+  font-size: 30px; 
+  position: absolute; 
+  top: 10px; 
+  right: 15px;
+}
+
+
+
+
+#carritoContainer input[type="text"],
+#carritoContainer input[type="number"] {
+  padding: 8px;
+  margin: 5px 0 10px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
