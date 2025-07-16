@@ -4,8 +4,6 @@ background: linear-gradient(128deg, rgba(7, 7, 41, 1) 0%, rgba(47, 23, 135, 1) 4
 height: 100%;
 background-attachment: fixed;
 }
-/* background: #b7edb7;
-background: linear-gradient(308deg, rgba(183, 237, 183, 1) 25%, rgba(252, 252, 225, 1) 65%); ----- Para el fondo claro*/
 
 .cuadroTitulo{
     background: #654ea3;  
@@ -114,10 +112,10 @@ border: solid 2px #c7b0ee99;
 .h2produ{
      color: #aa7ff3;
      font-size: 3rem;
-     margin: 0;
      font-weight: bolder;
      text-align: center;
-     margin-top: 4%;
+     margin: 4% 0 0 0;
+
 }
 
 .carddietetica {
@@ -336,7 +334,6 @@ text-align: center;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  position: fixed;
   animation: parpadeo 1s infinite;
 }
 
@@ -362,10 +359,7 @@ text-align: center;
   50% { opacity: 0.6;}
 }
 
-img.fly {
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
+
 
 #cerrarCarrito{
   cursor: pointer;
@@ -386,4 +380,3 @@ img.fly {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
