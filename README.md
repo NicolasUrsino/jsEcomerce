@@ -15,7 +15,7 @@ Tecnologías usadas:
 - HTML
 - CSS 
 - JavaScript 
-- `localStorage`
+- localStorage
 - Librería externa: SweetAlert2
 
 ---
